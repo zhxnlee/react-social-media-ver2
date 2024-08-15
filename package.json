@@ -15,5 +15,8 @@
     "express": "^4.19.2",
     "express-session": "^1.18.0",
     "mongoose": "^8.5.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
