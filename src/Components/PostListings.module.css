@@ -1,0 +1,32 @@
+
+.postListingSection img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.postListingSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    
+    
+    
+}
+
+
+
+.allPosts{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+  
+}
+
+
+.createPostSection{
+    width: 100%;
+}
+

@@ -1,0 +1,140 @@
+
+
+.navigationList ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap:2rem;
+  
+    
+}
+
+.logo{
+    flex:5;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    opacity: 0;
+    
+}
+
+.logo h1:hover{
+    
+    
+}
+
+.navigationList {
+    flex:5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    
+    
+
+}
+
+
+
+
+.navigationSection{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 3rem;
+
+}
+
+.sureLogOut{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.sureLogOut ul{
+    list-style:none;
+}
+
+.navigationList li{
+    opacity: 0;
+}
+.navigationList li:nth-child(1){
+    animation: floatIn 1s 0.5s forwards;
+}
+
+.navigationList li:nth-child(2){
+    animation: floatIn 1s 1s forwards; 
+}
+
+.navigationList li:nth-child(3){
+    animation: floatIn 1s 1.5s forwards;
+}
+
+.logo{
+    animation: floatIn 1s forwards;
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navigationList a {
+    display: inline-block;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    margin: 0 0.2rem 0 0.2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    color:black;
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+
+.navigationList a:hover{
+    background-color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+    box-shadow: 0 
+}
+
+
+
+.navigationList a.active {
+    background-color: white;
+    font-weight: bold;
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   
+    animation: bloob 0.5s forwards;
+    
+    
+}
+
+@keyframes bloob {
+    from {
+        transform: translateY(-10px);
+       padding:0.4rem;
+       font-size: .5rem;
+       
+
+
+      
+    }
+    to {
+        
+       
+        
+    }
+}
+
+
+.navigationList .logoutButton a:hover{
+    color:red;
+}

@@ -1,0 +1,238 @@
+
+
+.postItem{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 4px -4px  gray;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    position: relative;
+    justify-content: center;
+    margin-top:2rem;
+    
+    
+ 
+    
+    
+}
+
+.postItem img{
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+
+.postItem img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.postItem a{
+    text-decoration: none;
+    color: black;
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+
+.username {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-block;
+}
+
+.username:hover{
+    transform: scale(1.1);
+    
+    
+}
+
+.postItem a:hover{
+    transform: scale(1.1);
+}
+
+.username{
+    font-weight: bold;
+}
+
+
+.usernameSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usernameSection .iconSize{
+    font-size:1.2rem;
+    margin-right:1rem;
+    border-radius: 25px;
+    padding:0.3rem;
+    
+}
+
+.usernameSection .iconSize:hover{
+    background-color: black;
+    color: white;
+    
+
+    
+}
+
+.menu{
+    position: relative;
+    display: inline-block;
+}
+
+.menuBar{
+    position: absolute;
+    right: 0;
+    background-color: white;
+    margin-right:1rem;
+    z-index: 1;
+    padding: 0.8rem;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+.menuBar ul{
+    list-style: none;
+    left:0;
+    padding: 0;
+   
+    
+}
+
+.menuBar li{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding-right:1.8rem;
+    border-radius:15px;
+ 
+ }
+.menuBar li:hover{
+   background-color: whitesmoke;
+   font-weight: bold;
+   color: red;
+   
+
+
+}
+
+
+.sureDelete{
+    position:absolute;
+    
+    align-self: center;
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 50%;
+    
+}
+
+.sureDelete ul{
+   list-style: none;
+   text-align: center;
+   padding:0;
+   margin-top: 0.5rem;
+
+
+}
+
+.sureDelete p{
+    padding: 1rem;
+ 
+ 
+ }
+
+.sureDelete li{
+  
+    text-align: center;
+    padding:1rem;
+    border-radius: 10px;
+    border-bottom:2px solid lightgray;
+    
+    
+ }
+
+ .sureDelete li:hover{
+  
+    background-color: whitesmoke;
+    font-weight: bold;
+    animation: menuHover 0.5s ease;
+    transform: scale(1.05);
+   
+  
+
+ }
+
+ @keyframes menuHover {
+    from {
+        transform: scale(1); /* Start at the original size */
+    }
+    to {
+        transform: scale(1.05); /* Scale up to 1.1 times the original size */
+    }
+}
+
+
+
+ .functionality{
+    display: flex;
+    gap:2rem;
+ }
+.functionality .heartIcon{
+    font-size: 1.5rem;
+    
+}
+
+.functionality .heartIcon:hover{
+    animation: hoverFunctionality 1s ease;
+    color: gray;
+    transform: scale(1.1);
+
+}
+
+@keyframes hoverFunctionality {
+    from{
+        transform: scale(1);
+  
+    }to{
+        transform: scale(1.1);
+  
+    }
+}
+
+.functionality .commentIcon{
+    font-size:1.5rem;
+}
+
+.functionality .likedHeartIcon{
+    font-size: 1.5rem;
+    color: red;
+    animation: likePost 0.5s ease-out;
+   
+}
+
+@keyframes likePost{
+    from{
+        font-size: 1.8rem;
+
+    }to{
+
+    }
+}
+
+.heart{
+    display: flex;
+    gap:1rem;
+}
+
+.likeCount{
+    user-select: none;
+}
