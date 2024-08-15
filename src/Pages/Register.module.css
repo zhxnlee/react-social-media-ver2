@@ -1,0 +1,80 @@
+
+
+.registerSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100%;
+    gap:1rem
+}
+
+.inputSection form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.inputSection input{
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+   
+}
+
+.buttons button{
+    padding: 1rem;
+    border-radius: 15px;
+   
+    border: none;
+    margin-top: 1rem;
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+}
+
+.buttons button:hover{
+    background-color: black;
+    font-weight: bold;
+    color:white;
+    transform: scale(1.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.buttons a{
+    text-decoration: none;
+    color: black
+}
+
+.buttons a:hover{
+    font-weight: bold;
+    color: black
+}
+
+.registerSection{
+    text-align:center ;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+   
+    
+}

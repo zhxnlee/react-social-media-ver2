@@ -1,0 +1,26 @@
+.homeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    height: 100%; 
+    margin-top: 0;
+    width: 100%;
+ 
+    
+    
+    animation: floatIn 1s forwards;
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
