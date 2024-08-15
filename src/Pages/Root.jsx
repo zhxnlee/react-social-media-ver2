@@ -11,7 +11,7 @@ function Root(){
     const navigate = useNavigate();
 
     useEffect(() => {
-        navigate('/login'); // Redirect to /login when the app starts
+        navigate('/react-social-media-ver2/login'); // Redirect to /login when the app starts
       }, [navigate]);
     return(
         

@@ -29,7 +29,7 @@ function Login(){
             if(response.data.success){
                 console.log("Login Success!")
                 localStorage.setItem("username", credentials.username);
-                navigate("/home")
+                navigate("/react-social-media-ver2/home")
 
                 
             }else{

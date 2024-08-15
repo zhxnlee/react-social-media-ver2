@@ -56,14 +56,14 @@ function App() {
 
 
   const router = createBrowserRouter([
-    {path: "/", element: <Root/>, children:[
+    {path: "/react-social-media-ver2", element: <Root/>, children:[
  
-      {path: "/home", element :<Home/>},
-      {path: "/profile/:username", element: <Profile/>}
+      {path: "/react-social-media-ver2/home", element :<Home/>},
+      {path: "/react-social-media-ver2/profile/:username", element: <Profile/>}
       
     ]},
-    {path: "/login", element: <Login/>},
-    {path: "/register", element: <Register/>},
+    {path: "/react-social-media-ver2/login", element: <Login/>},
+    {path: "/react-social-media-ver2/register", element: <Register/>},
     
   ])
 

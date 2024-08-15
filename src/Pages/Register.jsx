@@ -25,7 +25,7 @@ function Register(){
                 ])
                 console.log(response.data)
                 setUserTaken("Successfully Registered!")
-                navigate("/login");
+                navigate("/react-social-media-ver2/login");
 
             }else if (!response.data.success){
                 setUserTaken("Username already taken!")

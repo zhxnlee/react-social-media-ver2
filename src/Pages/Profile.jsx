@@ -23,7 +23,7 @@ function Profile(){
         
             <h1>{username}'s Profile</h1>
             <PostListings/> 
-            </div>) : (navigate("/login"))}
+            </div>) : (navigate("/react-social-media-ver2/login"))}
         </>);
 
 }

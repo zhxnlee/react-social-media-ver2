@@ -23,7 +23,7 @@ function Home() {
         
             <h1>Welcome {username}!</h1>
             <PostListings/> 
-            </div>) : (navigate("/login"))}
+            </div>) : (navigate("/react-social-media-ver2/login"))}
         </>);
 }
 
